@@ -29,7 +29,7 @@ boton.addEventListener("click", e => {
   let domNumero = document.querySelector(".numero");
   domNumero.innerHTML = resultadoNumero;
 
-  if (resultadoPalo == "♦" || resultadoPalo == "♥") {
+  /* if (resultadoPalo == "♦" || resultadoPalo == "♥") {
     let color = document.querySelectorAll(".color");
 
     color.forEach(elemento => {
@@ -42,5 +42,13 @@ boton.addEventListener("click", e => {
       elemento.style.color = "#000000";
     });
   }
-  console.log(resultadoPalo);
+  console.log(resultadoPalo);*/
+
+  let color = document.querySelectorAll(".color");
+  let colorHex =
+    resultadoPalo == "♦" || resultadoPalo == "♥" ? "#FF0000" : "#000000";
+
+  color.forEach(elemento => {
+    elemento.style.color = colorHex;
+  });
 });
