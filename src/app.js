@@ -42,7 +42,7 @@ boton.addEventListener("click", e => {
       elemento.style.color = "#000000";
     });
   }
-  console.log(resultadoPalo);*/
+ */
 
   let color = document.querySelectorAll(".color");
   let colorHex =
@@ -51,4 +51,6 @@ boton.addEventListener("click", e => {
   color.forEach(elemento => {
     elemento.style.color = colorHex;
   });
+
+  console.log(resultadoPalo);
 });
